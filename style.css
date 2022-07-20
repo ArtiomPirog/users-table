@@ -1,0 +1,73 @@
+.container-form{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-student-form {
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+.container-filter{
+    width: 400px;
+}
+
+.container-table{
+    display: flex;
+    justify-content: space-around;
+}
+
+th{
+    padding: 0;
+    outline: 1px solid black;
+}
+
+td{
+    outline: 1px solid black;
+    text-align: center;
+}
+
+.students-list-title{
+    font-size: 25px;
+}
+
+.search-title{
+    font-size: 2em;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-style{
+    width: 200px;
+}
+
+.faculty {
+    margin-bottom: 40px;
+}
+
+.btn-style {
+    width: 150px;
+}
+
+.filter-btn:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.error{
+    color: red;
+}
+
+.error-name{
+    display: none;
+}
+
+.error-surname{
+    display: none;
+}
+
+.error-middlename{
+    display: none;
+}

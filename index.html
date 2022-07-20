@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Таблица со студентами</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="container-form">
+            <div class="container-student-form">
+                <h1>Заполните форму</h1>
+                <form class="student-form flex">
+                    <p>Имя:</p>
+                    <p class="error-name error">графа 'Имя' не должна содержать цифр, пробелов, а также различных
+                        знаков(№$%*[]...)</p>
+                    <input class="name input-style" required type="text">
+                    <p>Фамилия:</p>
+                    <p class="error-surname error">графа 'Фамилия' не должна содержать цифр, пробелов, а также различных
+                        знаков(№$%*[]...)</p>
+                    <input class="surname input-style" required type="text">
+                    <p>Отчество:</p>
+                    <p class="error-middlename error">графа 'Отчество' не должна содержать цифр, пробелов, а также
+                        различных знаков(№$%*[]...)</p>
+                    <input class="middle-name input-style" required type="text">
+                    <p>Дата рождения:</p>
+                    <input class="birth-date input-style" min="1900-01-01" max="2023-01-01" required type="date">
+                    <p>Год начала обучения:</p>
+                    <input class="start-education input-style" min="2000-01-01" max="2023-01-01" required type="date">
+                    <p>Факультет:</p>
+                    <input class="faculty input-style" required type="text">
+                    <button class="btn-student-form btn-style">Добавить</button>
+                </form>
+            </div>
+
+            <div class="container-filter flex">
+                <h2 class="search-title">Поиск</h2>
+                <input class="initial-search input-style" type="text">
+                <button class="initial-search-btn btn-style filter-btn">Найти по фамилии</button>
+                <input class="faculty-search input-style" type="text">
+                <button class="faculty-search-btn btn-style filter-btn">Найти по факультету</button>
+                <input class="start-education-search input-style" type="number">
+                <button class="start-education-search-btn btn-style filter-btn">Найти по году начала обучения</button>
+                <input class="end-education-search input-style" type="number">
+                <button class="end-education-search-btn btn-style filter-btn">Найти по году окончания обучения</button>
+            </div>
+        </div>
+
+        <div class="container-table">
+        <table>
+            <caption class="students-list-title" >Список студентов</caption>
+            <thead>
+                <tr>
+                    <th><button class="btn-style-reset btn-initials">Ф.И.О.</button></th>
+                    <th><button class="btn-style-reset btn-faculty">Факультет</button></th>
+                    <th><button class="btn-style-reset btn-birtn-date">Дата рождения и возраст</button></th>
+                    <th><button class="btn-style-reset btn-start-education">Дата начала/конца обучения, курс</button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="students-list">
+
+            </tbody>
+        </table>
+    </div>
+    </div>
+</body>
+
+</html>
